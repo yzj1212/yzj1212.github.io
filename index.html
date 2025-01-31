@@ -3,11 +3,22 @@
   <head>
     <script>
         function myFunction() {
-            window.location.href = 'https://yzj1212.github.io/1.html';;
+            const inputElement = document.getElementById("text").value;
+
+            if (inputElement === "李天心") {
+                window.location.href = 'https://yzj1212.github.io/1.html';;
+            } else {
+                alert("你不是李天心，机密泄漏！机密泄漏！机密泄漏！");
+            }
         }
     </script>
   </head>
   <body>
-    <button type="button" onclick="myFunction()">Try it</button>
+    <strong style="font-size: 100px">绝密</strong>
+    <br/>
+    <p>输入姓名以验证身份</p>
+    <input id="text"></input>
+
+    <button type="button" onclick="myFunction()">输入</button>
   </body>
 </html>

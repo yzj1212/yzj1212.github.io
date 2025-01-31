@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        function myFunction() {
+            const inputElement = document.getElementById("text").value;
+
+            if (inputElement === "萨克斯") {
+                window.location.href = 'https://yzj1212.github.io/3.html';;
+            } else {
+                alert("猜错了，声音更大了，吵死了！！！");
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <p>
+        病毒解开了，终于可以正常说话了。谢谢你，天心大侦探。现在我们正式开始。你来到这座大宅，闭眼感受。
+        </p>
+        <p>
+            你仿佛听见了什么声音，是你熟悉的声音，你想起你老公会制造这种声音，你后悔当时不懂欣赏，还嫌吵闹，你试图回忆起来这是什么声音：
+        </p>  
+    <input id="text" placeholder="什么声音？"></input>
+    <button type="button" onclick="myFunction()">输入</button>
+  </body>
+</html>
